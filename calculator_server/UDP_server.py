@@ -4,7 +4,7 @@ from .calculate import calculate, CalculationError
 
 def main():
     HOST = ''
-    PORT = 9010
+    PORT = 9011
 
     try:
         with socket.socket(socket.AF_INET, socket.SOCK_DGRAM) as s:
