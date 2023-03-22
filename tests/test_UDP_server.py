@@ -20,5 +20,4 @@ def test_that_received_binary_expression_returns_correct_binary_result():
     socket_mock = _set_up_mocked_calculator_socket(b'2+2')
 
     with patch('calculator_server.UDP_server.socket', new=socket_mock):
-        main()
-        connection_mock.__enter__().sendall.assert_called_with(b'4')
+        raise NotImplemented
